@@ -89,6 +89,39 @@ a {
 
 @media screen and (min-width: 1024px) {
     .link-arrow {
+        font-size: 1.5rem; /* created a new/separate media query for link so that link styles are in the same place */
+    }
+}
+
+/* BADGES */
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    white-space: no-wrap; /* this is so the items inside the badge will not wrap or go to another space if the screen is small */
+}
+
+.badge--primary { /* This is BEM, this is the first "skin" */ 
+    background: var(--color-primary);
+    color: white;
+}
+
+.badge--secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
         font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 1.2rem;
     }
 }
