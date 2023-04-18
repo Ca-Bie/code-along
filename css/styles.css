@@ -8,6 +8,12 @@
     --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 html {
     /* 62.5% of 16px = 10px */
     font-size: 62.5%;
@@ -175,4 +181,67 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+/* BUTTONS -- These are mobile version */ 
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer; /* to make it clickable */
+    font-size: 1.8rem; /* this size id for mobile */
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    text-align: center; /* always set buttons to center align */
+    white-space: nowrap; /* so incase we have limited space, the text and button will not wrap to the second line */
+}
+
+.btn--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background: #3a8ffd;
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.btn--secondary:hover {
+    background: #00c8eb;
+}
+
+.btn--accent {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.btn--accent:hover {
+    background: #ec3000;
+}
+
+.btn--block {
+    width: 100%;
+    display: inline-block; /* anchor elements are inline by default, if you give them a width, that's not gonna work*/
+}
+
+.btn--outline {
+    background: #fff;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+    background: var(--color-headings);
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {  /* desktop version @media query */
+    .btn {
+        font-size: 1.5rem;
+    }
 }
