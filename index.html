@@ -48,6 +48,28 @@
         <a href="#" class="btn btn--secondary btn--outline">Buy Now!</a>
         <br>
         <!-- INPUT ELEMENTS -->
-        <input type="text" class="input" placeholder="Enter domain name here..."/> <!-- a hint, placeholder is what you see inside the input element, it disappears once you start typing-->
+        <input type="text" class="input" placeholder="Enter domain name here..."/> 
+        <!-- a hint, placeholder is what you see inside the input element, it disappears once you start typing-->
+        <br>
+        <!--INPUT + ACCENT BUTTON-->
+        <br>
+        <div class="input-group">
+            <input type="text" class="input" placeholder="Enter domain name here...">
+            <button class="btn btn--accent">Subscribe</button>
+        </div>
+        <br>
+        <div class="input-group">
+            <button class="btn btn--accent">Subscribe</button>
+            <input type="text" class="input" placeholder="Enter domain name here...">
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="icon-container">
+                <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#wordpress"></use> <!-- copied from svgsprites.es bottom part, make sure to reference the link correctly "images/sprite.svg#wordpress" to succesfully load the image to the browser-->
+                </svg>
+            </span>
+            <input type="text" class="input" placeholder="Enter domain name here...">
+        </div>
     </body>
 </html>
