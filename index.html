@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae perspiciatis facilis rerum veritatis illo eligendi aspernatur, odio totam explicabo.</p>
-    <a href="#" class="link-arrow">Learn More</a>
-    <br>
-    <span class="badge badge--primary">10% Off</span>
-    <br>
-    <ul class="list list--tick">
-        <li class="list__item">Item 1</li>
-        <li class="list__item">Item 2</li>
-        <li class="list__item">Item 3</li>
-    </ul>
-    <br>
-    <span class="icon-container">
-        <svg class="icon icon--primary">
-            <use xlink:href="images/sprite.svg#wordpress"></use> <!-- copied from svgsprites.es bottom part, make sure to reference the link correctly "images/sprite.svg#wordpress" to succesfully load the image to the browser-->
-        </svg>
-    </span>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae perspiciatis facilis rerum veritatis illo eligendi aspernatur, odio totam explicabo.</p>
+        <a href="#" class="link-arrow">Learn More</a>
+        <br>
+        <span class="badge badge--primary">10% Off</span>
+        <br>
+        <!-- LISTS -->
+        <ul class="list list--tick">
+            <li class="list__item">Item 1</li>
+            <li class="list__item">Item 2</li>
+            <li class="list__item">Item 3</li>
+        </ul>
+        <br>
+        <!-- ICONS-->
+        <span class="icon-container">
+            <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#wordpress"></use> <!-- copied from svgsprites.es bottom part, make sure to reference the link correctly "images/sprite.svg#wordpress" to succesfully load the image to the browser-->
+            </svg>
+        </span>
+        <br>
+        <!-- BUTTONS, types of buttons -- buttons that take up the whole block, small buttons, call out buttons-->
+        <button class="btn btn--primary">Buy Now!</button> <!-- This is a primary button, use primary color-->
+        <button class="btn btn--secondary">Get Now</button>
+        <br>
+        <button class="btn btn--accent">Avail Now</button>
+        <a href="#" class="btn btn--accent">Avail Now</a>
+        <!-- block buttons-->
+        <button class="btn btn--primary btn--block">Buy Now!</button>
+        <a href="#" class="btn btn--secondary btn--block">Buy Now!</a>
+        <br> <!-- outline button-->
+        <button class="btn btn--primary btn--outline">Buy Now!</button>
+        <a href="#" class="btn btn--secondary btn--outline">Buy Now!</a>
+    </body>
 </html>
