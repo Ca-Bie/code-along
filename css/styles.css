@@ -1,3 +1,5 @@
+/* TYPOGRAPHY */
+
 :root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
@@ -43,6 +45,7 @@ p {
     margin-top: 0;
 }
 
+/* media query used for 1024px min */
 @media screen and (min-width: 1024px) {
     body {
         font-size: 1.8rem;
@@ -58,5 +61,34 @@ p {
 
     h3 {
         font-size: 2.4rem;
+    }
+}
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+}
+
+.link-arrow {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link-arrow::after {
+    content: "-->";
+    margin-left: 5px;
+    transition: margin 0.15s; /* Arrow move to the right on hover in 15s*/
+}
+
+.link-arrow:hover::after {
+    margin: 10px; /* Arrow moves to the right by 5px upon hover*/
+}
+
+@media screen and (min-width: 1024px) {
+    .link-arrow {
+        font-size: 1.5rem;
     }
 }
