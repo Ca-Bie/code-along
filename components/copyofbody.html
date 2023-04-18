@@ -1,0 +1,102 @@
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae perspiciatis facilis rerum veritatis illo eligendi aspernatur, odio totam explicabo.</p>
+    <a href="#" class="link-arrow">Learn More</a>
+    <br>
+    <span class="badge badge--primary">10% Off</span>
+    <br>
+    <!-- LISTS -->
+    <ul class="list list--tick">
+        <li class="list__item">Item 1</li>
+        <li class="list__item">Item 2</li>
+        <li class="list__item">Item 3</li>
+    </ul>
+    <br>
+    <!-- ICONS-->
+    <span class="icon-container">
+        <svg class="icon icon--primary">
+            <use xlink:href="images/sprite.svg#wordpress"></use> <!-- copied from svgsprites.es bottom part, make sure to reference the link correctly "images/sprite.svg#wordpress" to succesfully load the image to the browser-->
+        </svg>
+    </span>
+    <br>
+    <!-- BUTTONS, types of buttons -- buttons that take up the whole block, small buttons, call out buttons-->
+    <button class="btn btn--primary">Buy Now!</button> <!-- This is a primary button, use primary color-->
+    <button class="btn btn--secondary">Get Now</button>
+    <br>
+    <button class="btn btn--accent">Avail Now</button>
+    <a href="#" class="btn btn--accent">Avail Now</a>
+    <!-- block buttons-->
+    <button class="btn btn--primary btn--block">Buy Now!</button>
+    <a href="#" class="btn btn--secondary btn--block">Buy Now!</a>
+    <br> <!-- outline button-->
+    <button class="btn btn--primary btn--outline">Buy Now!</button>
+    <a href="#" class="btn btn--secondary btn--outline">Buy Now!</a>
+    <br>
+    <!-- INPUT ELEMENTS -->
+    <input type="text" class="input" placeholder="Enter domain name here..."/> 
+    <!-- a hint, placeholder is what you see inside the input element, it disappears once you start typing-->
+    <br>
+    <!--INPUT + ACCENT BUTTON-->
+    <br>
+    <div class="input-group">
+        <input type="text" class="input" placeholder="Enter domain name here...">
+        <button class="btn btn--accent">Subscribe</button>
+    </div>
+    <br>
+    <div class="input-group">
+        <button class="btn btn--accent">Subscribe</button>
+        <input type="text" class="input" placeholder="Enter domain name here...">
+    </div>
+    <br>
+    <div class="input-group">
+        <span class="icon-container">
+            <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#wordpress"></use> <!-- copied from svgsprites.es bottom part, make sure to reference the link correctly "images/sprite.svg#wordpress" to succesfully load the image to the browser-->
+            </svg>
+        </span>
+        <input type="text" class="input" placeholder="Enter domain name here...">
+    </div>
+    <br>
+    <div style="width: 30%">
+        <div class="card card--primary">
+            <header class="card__header">Card Title</header> <!--why use __ here? because this header is an element inside this block, so it cannot exist on its own outside of this block or ourside of his component-->
+            <div class="card__body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veniam!
+            </div>
+        </div>
+    </div>
+    <div style="width: 30%">
+        <div class="card card--secondary">
+            <header class="card__header">Card Title</header> <!--why use __ here? because this header is an element inside this block, so it cannot exist on its own outside of this block or ourside of his component-->
+            <div class="card__body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veniam!
+            </div>
+        </div>
+    </div>
+    <!-- CARD + BUTTON + BADGE + LIST = PLAN CARD COMPONENT -->
+    <!--why use __ here? because this header is an element inside this block, so it cannot exist on its own outside of this block or ourside of his component-->
+    <div style="width: 50%">
+        <div class="plan">
+            <div class="card card--secondary">
+                <header class="card__header">
+                    <h3 class="plan__name">Entry</h3>
+                    <span class="plan__price">$14</span>
+                    <span class="plan__billing-cycle">/month</span>
+                    <span class="badge badge--secondary badge--small">10% OFF</span>
+                    <span class="plan__description">Easy start on the cloud</span>
+                </header> 
+                <div class="card__body">
+                    <ul class="list list--tick">
+                        <li class="list__item">Unlimited Websites</li>
+                        <li class="list__item">Unlimited Bandwidth</li>
+                        <li class="list__item">100 GB SDD Storage</li>
+                        <li class="list__item">3 GB RAM</li>
+                    </ul>
+                    <button class="btn btn--outline btn--block">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
